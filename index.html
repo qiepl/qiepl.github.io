@@ -2,9 +2,57 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Home</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>郄彭亮的个人网站 - Qie Pengliang's Personal Website </title>
+    <link rel="stylesheet" href="./public/css/bootstrap.min.css">
+    <style type="text/css">
+        body{
+          background: url('public/images/home-bg.jpg') center  no-repeat ;
+          background-size: cover;
+          width: 100vw;
+          height: 100vh;
+        }
+
+        /*=============入口-遮罩层-选项按钮*/
+        .entry{
+          position: absolute;
+          top:0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin:auto;
+          width: 500px;
+          height: 240px;
+          line-height: 240px;
+          background: rgba(0, 0, 0, 0.4);
+          border-radius: 8px;
+          text-align: center;
+        }
+        .entry div {
+          background: rgba(0, 0, 0, 0.5);
+          border-radius: 8px 8px 0 0;
+          width: 100%;
+          height: 40px;
+        }
+        .entry div a{
+            margin: 0 10px;
+            font-size: 16px;
+            color: #d7d7d7;
+        }
+        .entry div a:hover{
+          color: #0ff;
+        }
+    </style>
   </head>
   <body>
-      这是主页
+        <div class="entry">
+          <div>
+              <a href="#">个人网站</a>
+              <a href="#">博客专题</a>
+              <a href="#">帮助教程</a>
+              <a href="#">个人说说</a>
+              <a href="#">关于我</a>
+          </div>
+        </div>
   </body>
 </html>
